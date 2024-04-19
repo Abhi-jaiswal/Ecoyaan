@@ -21,7 +21,7 @@ function Carousel({images}) {
   }
   return (
     <div>
-        <div className='h-[600px] w-full overflow-x-hidden relative'>  
+        <div className='h-[250px] sm:h-[600px] w-full overflow-x-hidden relative'>  
             {
               Data.map((image,indx) => {
                 return (
@@ -32,19 +32,19 @@ function Carousel({images}) {
 
                     <img src={image.src} alt="" className='card_img object-cover'/>
 
-                    <div className='card_overlay flex flex-col '>
+                    <div className='absolute sm:top-[20%] sm:left-[10%] left-[10px] top-[8%] px-0 justify-start w-[50%] text-black py-[30px] flex flex-col'>
                       <div className=''>
-                        <h1 className='text-[20px] md:text-[20px] text-black font-bold'>{image.title}</h1>
+                        <h1 className='text-[16px] sm:text-[20px] md:text-[20px] text-black font-bold'>{image.title}</h1>
                         <p className='text-black text-[12px] md:text-[20px]'>{image.desc}</p>
                       </div>
-                      <button className='bg-green-600 hover:bg-green-800 text-white py-2 px-3 rounded-3xl mt-10 w-36 sm:text-[19.2px] text-[10px]' onClick={() => window.open(image.link)}>{image.btn}</button>
+                      <button className='bg-green-600 hover:bg-green-800 text-white py-[6px] px-[10px] sm:py-2 sm:px-3 rounded-3xl mt-2 sm:mt-10 w-36 md:text-[19.2px] text-[10px]' onClick={() => window.open(image.link)}>{image.btn}</button>
                     </div>
                   </div>
                 )
               })
             }
-            {/* <div className='carousel_arrow_left' onClick={slideLeft}>&lsaquo;</div>
-            <div className='carousel_arrow_right' onClick={slideRight}>&rsaquo;</div> */}
+            {/* <div className='sm:invisible carousel_arrow_left' onClick={slideLeft}>&lsaquo;</div> */}
+            <div className='sm:invisible carousel_arrow_right' onClick={slideRight}>&rsaquo;</div>
 
             <div className='carousel_pagination'>
             {Data.map((_,indx)=>{

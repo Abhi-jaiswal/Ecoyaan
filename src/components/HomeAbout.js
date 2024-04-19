@@ -36,7 +36,7 @@ const HomeAbout = () => {
             </div>
 
             <div className=''>
-                <video src='https://ecoyaan.com/images/ProductCuration.mp4' autoPlay loop className="h-[320px] object-scale-down transition ease-in-out delay-150 duration-300 hover:scale-110"/>
+                <video src='https://ecoyaan.com/images/ProductCuration.mp4' autoPlay loop className="h-[320px] object-scale-down transition ease-in-out delay-150 duration-300 hover:scale-110" ste/>
             </div>
         </div>
 

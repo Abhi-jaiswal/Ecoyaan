@@ -4,7 +4,7 @@ export const TeamData = [
         name:"SHRUTHI",
         role:"SOCIAL MEDIA",
         about:"Shruthi is in charge of our Instagram. She is a practising Vegan and cares deeply about sustainability. Follow her small business",
-        link:"https://www.instagram.com/ecoyaan/",
+        link:"https://www.instagram.com/soulfullymade_crafts/",
         linkName:"here",
         icons:"y"
     },
@@ -14,7 +14,7 @@ export const TeamData = [
         role:"SOCIAL MEDIA",
         about:"Urmil creates engaging content for us. She runs her own sustainable apparel store with her sister and advocates for slow fashion. Check out her business",
         linkName:"here",
-        link:"https://www.instagram.com/ecoyaan/",
+        link:"https://www.instagram.com/ferozi.conscious/",
         icons:"y"
     },
     {
@@ -23,7 +23,7 @@ export const TeamData = [
         role:"UX DESIGN",
         about:"Divya creates user-friendly and engaging interfaces for our platform. Check out more of her work on",
         linkName:"Behance",
-        link:"https://www.instagram.com/ecoyaan/"
+        link:"https://www.behance.net/bodradivya"
     },
     {
         src:"https://ecoyaan.com/images/about-us-product-team-02.png",
@@ -43,6 +43,6 @@ export const TeamData = [
         role:"TEAM ECOYAAN",
         about:"This spot awaits you.Check out our ",
         linkName:"Open Positions",
-        link:"https://www.instagram.com/ecoyaan/"
+        link:"/careers"
     },
 ]

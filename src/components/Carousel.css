@@ -27,7 +27,7 @@
     position: absolute;
 
     overflow: hidden;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     opacity: 0;
     pointer-events:none;
 }
@@ -52,7 +52,7 @@
     justify-content: flex-start;
     width: 50%;
     color: black;
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 
 .card_title {
@@ -66,7 +66,7 @@
     font-size: 35px;
     top: 50%;
     transform: translate(0,-50%);
-    background-color: gainsboro;
+    /* background-color: gainsboro; */
     display: flex;
     justify-content: center;
     width: 30px;

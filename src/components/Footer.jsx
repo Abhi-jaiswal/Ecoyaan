@@ -45,7 +45,7 @@ const Footer = () => {
 
   return (
     <div className='bg-gray-200 mt-11 p-0'>
-        <div className='w-11/12 mx-auto '>
+        <div className='mx-auto '>
             <div className='flex justify-center'> 
                 <div onClick={scrollToTop} className='flex items-center gap-2 hover:cursor-pointer'>
                     <IoIosArrowUp />
@@ -54,51 +54,49 @@ const Footer = () => {
             </div>
 
             {/* upper footer */}
-            <div className='md:flex justify-between'>
-                <div className="sm:flex lg:gap-20 md:w-8/12 justify-between lg:justify-normal">
-                    <div>
-                        <h1 className='font-bold text-2xl'>Company</h1>
-                        <div className="flex flex-col gap-2">
-                        <a href="/AboutUs" className='hover:underline'>About Us</a>
-                        <Link to="/sellOnEcoyaan" className='hover:underline'>Sell on Ecoyaan</Link>
-                        <Link to="/careers" className='hover:underline'>Careers</Link>
-                        </div>
+            <div className='flex justify-start align-top md:items-start md:space-x-8 items-start flex-col md:flex-row md:justify-center text-start p-6 md:p-8 xl:p-12 xl:pl-4 lg:justify-around text-gray-500 gap-8'>
+                <div>
+                    <h1 className='font-semibold text-[20px] mb-[8px] text-black'>Company</h1>
+                    <div className="flex flex-col">
+                    <a href="/AboutUs" className='hover:underline'>About Us</a>
+                    <Link to="/sellOnEcoyaan" className='hover:underline mt-[8px]'>Sell on Ecoyaan</Link>
+                    <Link to="/careers" className='hover:underline mt-[8px]'>Careers</Link>
                     </div>
+                </div>
 
-                    <div>
-                        <h1 className='font-bold text-2xl'>Links</h1>
-                        <div className="flex flex-col gap-2">
-                        <Link to="privacyPolicy" className='hover:underline'>Privacy policy</Link>
-                        <Link to="termsOfUse" className='hover:underline'>Terms of use</Link> 
-                        </div>
-                        
+                <div>
+                    <h1 className='font-semibold text-[20px] mb-[8px] text-black'>Links</h1>
+                    <div className="flex flex-col">
+                    <Link to="/privacyPolicy" className='hover:underline '>Privacy policy</Link>
+                    <Link to="/termsOfUse" className='hover:underline mt-[8px]'>Terms of use</Link> 
                     </div>
+                    
+                </div>
 
-                    <div>
-                        <h1 className='font-bold text-2xl'>Follow Us</h1>
-                        <div className="flex gap-2 text-2xl">
-                        <Link to="https://www.instagram.com/ecoyaan" target="_blank" className='text-pink-600 transition ease-in-out duration-200 hover:scale-110'><AiOutlineInstagram /></Link>
-                        <Link to="https://www.linkedin.com/company/ecoyaan/" target="_blank" className='text-blue-600 transition ease-in-out duration-200 hover:scale-110'><FaLinkedin /></Link>
-                        <Link to="https://www.facebook.com/Ecoyaan/" target="_blank" className='text-blue-800 transition ease-in-out duration-200 hover:scale-110'><FaFacebook /></Link>
-                        </div>
+                <div>
+                    <h1 className='font-semibold text-[20px] mb-[8px] text-black'>Follow Us</h1>
+                    <div className="flex gap-2 text-2xl">
+                    <Link to="https://www.instagram.com/ecoyaan" target="_blank" className='text-pink-600 transition ease-in-out duration-200 hover:scale-110'><AiOutlineInstagram /></Link>
+                    <Link to="https://www.linkedin.com/company/ecoyaan/" target="_blank" className='text-blue-600 transition ease-in-out duration-200 hover:scale-110'><FaLinkedin /></Link>
+                    <Link to="https://www.facebook.com/Ecoyaan/" target="_blank" className='text-blue-800 transition ease-in-out duration-200 hover:scale-110'><FaFacebook /></Link>
                     </div>
                 </div>
 
                 <div className='md:w-4/12 mt-9 sm:mt-0'>
                     <div>
-                        <h1 className='text-xl'>Subscribe to receive updates on blogs, future launches and more !</h1>
+                        <h1 className='text-md mb-4 text-left'>Subscribe to receive updates on blogs, future launches and more !</h1>
                     </div>
-                    <form className='py-4' onSubmit={SubmitHandler}>
-                        <input type="email" placeholder='Enter your email' className='w-full p-2 rounded-md' value={email} onChange={(e) => setEmail(e.target.value)} required/>
-                        <div className='text-xs my-4 w-10/12'>By subscribing, you agree to receive notifications<br/>
-                        <a href='/' className='text-blue-600'> Privacy Policy</a></div>
-                        <button type="submit" className='bg-green-600 text-white p-2 rounded w-full hover:bg-green-800'>Subscribe</button>
+                    <form className='' onSubmit={SubmitHandler}>
+                        <input type="email" placeholder='Enter your email' className='w-full p-[8px] rounded-md' value={email} onChange={(e) => setEmail(e.target.value)} required/>
+                        <div className='text-[12px] mt-[12px]'>By subscribing, you agree to receive notifications<br/>
+                        <a href='/privacyPolicy' className='text-blue-600'> Privacy Policy</a></div>
+                        <button type="submit" className='bg-green-600 text-white py-[8px] px-[16px] rounded w-full hover:bg-green-800 mt-4'>Subscribe</button>
                     </form>
 
 
                     {
-                        checked && <div className='flex text-xl mt-4 w-full h-11 px-auto transition duration-500'>
-                            <div className='flex gap-2 items-center w-full mx-20'>
+                        checked && <div className='flex text-[16px] md:text-[20px] m-4 w-100% justify-center mx-auto transition duration-500 px-auto'>
+                            <div className='flex gap-2 items-center justify-center w-full mx-auto'>
                                 <div className='text-green-600'><FaRegCheckCircle /></div>
                                 <div >Subscribed successfully!</div>
                             </div>
@@ -109,16 +107,16 @@ const Footer = () => {
             </div>
 
             {/* add baseline */}
-            <div className='min-h-0.5 w-full bg-gray-300 my-16'></div>
+            <div className='min-h-0.5 w-11/12 bg-gray-300 mx-auto'></div>
 
             {/* lower footer */}
-            <div className='sm:flex justify-between w-7/12 '>
+            <div className=' text-gray-500 flex justify-start md:space-x-8 md:items-start flex-col md:flex-row md:p-[48px] p-[24px] xl:p-12 align-top items-start md:justify-center text-start lg:justify-around xl:justify-normal gap-[24px]'>
                 <div>
-                    <h1 className='text-xl font-bold'>
-                    Registered Address:
+                    <h1 className='md:text-xl font-semibold mb-2 text-[20px] text-black'>
+                        Registered Address:
                     </h1>
 
-                    <div className='text-lg'>
+                    <div className='md:text-[19.2px] text-[16px]'>
                         1-N-12T-781/1<br/>
                         Sri Krishna Vilasa,<br/>
                         Urvastores,<br/>
@@ -129,12 +127,12 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div>
-                    <h1 className='text-xl font-bold'>
-                    Legal Business Name:
+                <div className='md:ml-[32px]'>
+                    <h1 className='md:text-xl font-semibold mb-2 text-[20px] text-black'>
+                        Legal Business Name:
                     </h1>
 
-                    <div className='text-lg'>
+                    <div className='md:text-[19.2px] text-[16px]'>
                         <div>
                         Kindkarma E-Retail Private Limited
                         <br/>
@@ -147,7 +145,7 @@ const Footer = () => {
             </div>
         </div>
 
-        <div className='w-full bg-gray-900 mt-16 text-white flex mx-auto text-center h-16 items-center'>
+        <div className='w-full bg-black text-white flex mx-auto text-center py-2 items-center'>
                 <div className='mx-auto'> © 2023 - 2024, Ecoyaan <sup>TM</sup></div>
         </div>   
     </div>

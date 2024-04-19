@@ -14,7 +14,7 @@ const AboutTeam = () => {
             {
               TeamData.map((item,indx) => {
                 return (
-                <div className={`items-center mx-auto p-[8px] rounded-lg shadow-xl shadow-slate-300 ${indx == 0 || indx == 2 || indx == 4 ? "bg-white" : "bg-[#F1FDFD]"}`}>
+                <div className={`items-center mx-auto p-[8px] rounded-lg md:shadow-none md:bg-white shadow-xl shadow-slate-300 ${indx == 0 || indx == 2 || indx == 4 ? "bg-white" : "bg-[#F1FDFD]"}`}>
                       <div className='flex flex-col items-center'>
                         <img src={item.src} className='h-[200px] object-scale-down rounded-full mb-5 transition ease-in-out duration-300 hover:scale-110'/>
                         <h1 className='text-xl font-bold'>{item.name}</h1>

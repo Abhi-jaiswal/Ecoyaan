@@ -4,14 +4,14 @@ export const Data = [
         title:"Buy Less, Buy Better!",
         desc:"Authentic source of truth for your sustainability needs.",
         btn:"About Us",
-        link:"https://www.instagram.com/ecoyaan/"
+        link:"/aboutus"
     },
     {
         src:"https://ecoyaan.com/images/carousel-2.png",
         title:"Follow us on Instagram",
         desc:"For climate news, lifestyle tips, & updates",
         btn:"Follow Us",
-        link:"/aboutus"
+        link:"https://www.instagram.com/ecoyaan/"
     },
     {
         src:"https://ecoyaan.com/images/carousel-3.png",
